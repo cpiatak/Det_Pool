@@ -80,7 +80,7 @@ class StartFrame(wx.Frame):
 		wx.EVT_MENU(self, 103, self.helpDocs_103_Event)
 		wx.EVT_MENU(self, 104, self.helpDocs_104_Event)
 		wx.EVT_MENU(self, 105, self.helpDocs_105_Event)
-                wx.EVT_MENU(self, 106, self.helpDocs_106_Event)
+                #wx.EVT_MENU(self, 106, self.helpDocs_106_Event)
 		self.Bind(wx.EVT_MENU, self.helpDocs_106_Event, id=106)
                 #wx.EVT_MENU(self, 107, self.helpDocs_107_Event)
 		self.Bind(wx.EVT_MENU, self.helpDocs_107_Event, id=107)
