@@ -78,10 +78,14 @@ class StartFrame(wx.Frame):
 		wx.EVT_MENU(self, 101, self.helpDocs_101_Event)
 		wx.EVT_MENU(self, 102, self.helpDocs_102_Event)
 		wx.EVT_MENU(self, 103, self.helpDocs_103_Event)
-		wx.EVT_MENU(self, 104, self.helpDocs_104_Event)
-		wx.EVT_MENU(self, 105, self.helpDocs_105_Event)
-                wx.EVT_MENU(self, 106, self.helpDocs_106_Event)
-                wx.EVT_MENU(self, 107, self.helpDocs_107_Event)
+		#wx.EVT_MENU(self, 104, self.helpDocs_104_Event)
+                self.Bind(wx.EVT_MENU, self.helpDocs_104_Event, id=104)
+		#wx.EVT_MENU(self, 105, self.helpDocs_105_Event)
+                self.Bind(wx.EVT_MENU, self.helpDocs_105_Event, id=105)
+                #wx.EVT_MENU(self, 106, self.helpDocs_106_Event)
+		self.Bind(wx.EVT_MENU, self.helpDocs_106_Event, id=106)
+                #wx.EVT_MENU(self, 107, self.helpDocs_107_Event)
+		self.Bind(wx.EVT_MENU, self.helpDocs_107_Event, id=107)
 
 		# Make a SubMenu
 		#self.submenu_Linkam = wx.Menu()
